@@ -12,9 +12,11 @@
 }
 
 .content-body {
-    background-color: #ffffff;
+    background-color: #e6e2f8;
     margin: 18px;
-    min-height: calc(100vh - 104px);
+    padding: 18px;
+    min-height: calc(100vh - 80px);
+    margin-top: 70px;
 }
 
 .pull-right {

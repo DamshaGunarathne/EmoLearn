@@ -36,11 +36,13 @@ import {ConfirmationService} from 'primeng/api';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { PaginatorModule } from 'primeng/paginator';
 import { PasswordModule } from 'primeng/password';
-import { MainMenuComponent } from './layouts';
+import { HeaderComponent, MainMenuComponent } from './layouts';
+import { ChartModule } from 'primeng/chart';
 
 @NgModule({
   declarations: [
-    MainMenuComponent
+    MainMenuComponent,
+    HeaderComponent
   ],
   imports: [
     CommonModule,
@@ -86,7 +88,8 @@ import { MainMenuComponent } from './layouts';
     ConfirmDialogModule,
     TreeSelectModule,
     PaginatorModule,
-    PasswordModule
+    PasswordModule,
+    ChartModule
   ],
   exports: [
     CommonModule,
@@ -129,7 +132,9 @@ import { MainMenuComponent } from './layouts';
     TreeSelectModule,
     PaginatorModule,
     PasswordModule,
-    MainMenuComponent
+    MainMenuComponent,
+    HeaderComponent,
+    ChartModule
   ],
   providers: [
     MessageService,

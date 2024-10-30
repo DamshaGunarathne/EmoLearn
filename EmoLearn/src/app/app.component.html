@@ -1,14 +1,39 @@
-<div class="grid full-height" *ngIf="!isLogged" >
+<!-- <div class="grid full-height" *ngIf="!isLogged" >
   <div class="col-12 h-full">    
     <router-outlet></router-outlet>
   </div>
 </div>
-
+<div class="grid">
+  <div class="col-12">
+    <app-header></app-header>
+  </div>
+</div>
 <div class="grid full-height" *ngIf="isLogged">
   <div class="col-2 h-full">
     <app-main-menu></app-main-menu>
   </div>
   <div class="col-10 h-full">
     <router-outlet></router-outlet>
+  </div>
+</div> -->
+
+<div class="full-height">
+  <div class="grid h-full" *ngIf="!isLogged">
+    <div class="col-12 h-full">    
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  <div class="grid text-right"  *ngIf="isLogged">
+    <div class="col-10">
+      <app-header></app-header>
+    </div>
+  </div>
+  <div class="grid h-full" *ngIf="isLogged">
+    <div class="col-2 h-full">
+      <app-main-menu></app-main-menu>
+    </div>
+    <div class="col-10 h-full">
+      <router-outlet></router-outlet>
+    </div>
   </div>
 </div>

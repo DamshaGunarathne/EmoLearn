@@ -1,0 +1,19 @@
+.header-container {
+    height: 75px;
+    text-align: right;
+    padding: 18px;
+
+    i {
+        font-size: 25px;
+        margin-right: 1rem;
+    }
+
+    .profile {
+        margin-right: 1rem;
+        img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+        }
+    }
+}
