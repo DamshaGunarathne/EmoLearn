@@ -1,0 +1,60 @@
+export enum EnumDataStringValues {
+    /*Clearance Step Tab Panel Enums */
+    CLEARANCE_TAB_PANEL_ENUM_HOD = 'HOD',
+    CLEARANCE_TAB_PANEL_ENUM_CREDIT = 'CDT',
+    CLEARANCE_TAB_PANEL_ENUM_RECOVERIES = 'RCV',
+    CLEARANCE_TAB_PANEL_ENUM_GOLD_LOAN = 'GL',
+    CLEARANCE_TAB_PANEL_ENUM_INTERNAL_AUDIT = 'IA',
+    CLEARANCE_TAB_PANEL_ENUM_IT = 'IT',
+    CLEARANCE_TAB_PANEL_ENUM_ADMIN = 'ADM',
+    CLEARANCE_TAB_PANEL_ENUM_HR = 'HR',
+    CLEARANCE_TAB_PANEL_ENUM_ATTACHMENTS = 'ATT',
+    CLEARANCE_TAB_PANEL_ENUM_FINAL_APPROVAL = 'FA',
+
+    //Gender
+    MALE = '1',
+    FEMALE = '0',
+
+    //User Gender Type
+     MALE_USER = 'Male',
+     FEMALE_USER = 'Female',
+
+    GENDER_MALE = 'MALE',
+    GENDER_FEMALE = 'FEMALE',
+
+    TITLE_MALE = 'MR',
+    TITLE_FEMALE = 'MRS',
+
+    REQUEST_TYPE_CLEARANCE = 'Clearance',
+
+    //Department Enum 
+
+    INFORMATION_TECHNOLOGY = 'Information Technology',
+    GOLD_LOAN = 'Gold Loan',
+
+    //User Grade Code
+    MANAGEMENT = '000003',
+    EXECUTIVE = '000004',
+    CLERICAL = '000005',
+    MINOR = '000006',
+    SENIOR_MANAGEMENT = '000007',
+
+    //User Type Code
+    INTERN = '000008',
+    PROBATION = '000005',
+
+    //For Final Approval Credit Tab Branches
+    CREDIT_COMMON = 'CREDIT - COMMON',
+    
+    //approver inquiry
+    APPROVE_INQUIRY_SEARCH_TYPE_TASK_ID= 'TID',
+    APPROVE_INQUIRY_SEARCH_TYPE_EPF= 'EPF',
+    APPROVE_INQUIRY_SEARCH_TYPE_REQUEST_TYPE= 'RT',
+
+    MPT_APPROVAL_STATUS_ENUM_APPROVAL_FIRST_DENIED = '(First Level Approval Denied)',
+    MPT_APPROVAL_STATUS_ENUM_APPROVAL_SECOND_DENIED = '(Second Level Approval Denied)',
+    MPT_APPROVAL_STATUS_ENUM_APPROVAL_THIRD_DENIED = '(Third Level Approval Denied)',
+    MPT_APPROVAL_STATUS_ENUM_APPROVAL_FOURTH_DENIED = '(Fourth Level Approval Denied))',
+    MPT_APPROVAL_STATUS_ENUM_APPROVAL_FIFTH_DENIED = '(Fifth Level Approval Denied)',
+
+}

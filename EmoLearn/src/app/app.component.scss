@@ -1,0 +1,29 @@
+
+.main-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 15%;
+}
+
+.content-area {
+    position: relative;
+    left: 15%;
+    width: 85%;
+    height: auto;
+    top: 68px;
+    overflow-y: auto;
+}
+
+app-header {
+    position: fixed;
+    top: 0;
+    left: 15%;
+    right: 0;
+    z-index: 1000;
+}
+
+.full-height {
+    height: calc(100vh - 1px);
+}

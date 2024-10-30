@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    // font-size: 12px;
+    margin: 0;
+}
+
+.grid,
+[class^="col-"] {
+    margin: 0;
+    padding: 0;
+}
+
+.content-body {
+    background-color: #ffffff;
+    margin: 18px;
+    min-height: calc(100vh - 104px);
+}
+
+.pull-right {
+    float: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.cursor-point {
+    cursor: pointer;
+}
+
+.primary-button {
+    background-color: #1E1A64;
+    border-radius: 16px;
+    padding: 12px 15px;
+
+    &.p-button:enabled:hover {
+        background-color: #1E1A64;
+    }
+}
+
+/*------------import-media.scss-file------------*/
+@import './media.scss';

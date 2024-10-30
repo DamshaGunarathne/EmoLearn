@@ -1,0 +1,62 @@
+<!-- <div class="main-menu-container">
+    <div class="company-details">
+        <p class="company-name">EmoLearn</p>
+    </div>
+    <div [ngStyle]="{'min-height': userData ? 'auto' : '50px'}">
+        <div class="user-details" *ngIf="userData">
+            <p-avatar
+                [image]="'assets/img/profile.png'"
+                size="xlarge" shape="circle"></p-avatar>
+            <p class="name mt-4 hidden-overflow" [title]="userData?.fullName">{{userData?.fullName}}</p>
+            <p class="epf mt-2 hidden-overflow" [title]="userData.designation + ' | EPF - ' + userData.epfNumber">
+                EPF - {{userData.epfNumber}}</p>
+            <p class="epf mt-2 hidden-overflow" [title]="userData.designation + ' | EPF - ' + userData.epfNumber">
+                {{userData.designation}}</p>
+            <p class="department mt-2 hidden-overflow" [title]="userData.branch">{{userData.branch}}</p>
+            <p class="department mt-2 hidden-overflow" [title]="userData.department">{{userData.department}}</p>
+        </div>
+    </div>
+    <div class="side-menu">
+        
+
+    </div>
+</div> -->
+
+<div class="grid h-full side-menu-container">
+    <div class="col-12">
+        <div class="grid">
+            <div class="col-12 mt-5 pl-5">
+                <h3>EmoLearn</h3>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-12 flex justify-content-center">
+                <div class="profile-container">
+                    <img src="../../../../assets/img/profile.png">
+                </div>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-12 text-center mt-3">
+                <p>R M D S Gunarathne</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-12 text-center mt-2">
+                <p>COBSCCOMP4Y222P-067</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-12 text-center mt-2">
+                <p>BSc(Hons) Computing 22.2P</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="col-12 mt-3">
+                <p-scrollPanel [style]="{width: '100%', height: '55vh'}">
+                    <p-panelMenu [model]="items" [multiple]="false"></p-panelMenu>
+                </p-scrollPanel>
+            </div>
+        </div>
+    </div>
+</div>

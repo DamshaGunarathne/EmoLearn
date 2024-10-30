@@ -1,0 +1,65 @@
+.side-menu-container {
+    background-color: #1E1A64;
+    color: #ffffff;
+    border-radius: 0px 40px 40px 0px;
+
+    .profile-container {
+        margin-top: 3rem;
+        height: 120px;
+        width: 120px;
+    
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;    
+        }
+    }
+
+    .p-panelmenu {
+        .p-panelmenu-panel {
+            // &:child {
+                .p-panelmenu-header {
+                    &>a {
+                        background-color: #1E1A64;
+                        color: #ffffff;
+                        border: none;
+
+                        &:hover {
+                            background-color: #1E1A64;
+                            color: #ffffff;
+                            border: none;
+                        }
+                    }
+                }
+            // }
+        }
+        
+        .p-panelmenu-content {
+            border: none;
+            padding: 0;
+
+            .p-menuitem {
+                .p-menuitem-link {
+                    background-color: #1E1A64;
+                    color: #ffffff;
+                    border: none;
+                    
+                    .p-menuitem-text {
+                        color: #ffffff;
+                    }
+
+                    &:hover {
+                        background-color: #1E1A64;
+                        color: #ffffff;
+                        border: none;
+
+                        .p-menuitem-text {
+                            color: #ffffff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
