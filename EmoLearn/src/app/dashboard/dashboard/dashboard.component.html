@@ -5,13 +5,63 @@
             <p>Welcome back Damsha</p>
         </div>
     </div>
-    <div class="grid">
-        <div class="col-12">
-            <div class="grid">
-                <div class="col-4">
-                    <p-chart type="doughnut" [data]="data" [options]="options"></p-chart>
+    <p-scrollPanel styleClass="scroll-panel">
+        <div class="grid">
+            <div class="col-12">
+                <div class="grid">
+                    <div class="col-4 p-3" *ngFor="let datasetDataVM of datasetDataVMs">
+                        <p-card>
+                            <div class="grid">
+                                <div class="col-12">
+                                    <h4>{{datasetDataVM?.name}}</h4>
+                                    <p>{{datasetDataVM?.date}}</p>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <div class="col-12">
+                                    <p-chart type="doughnut" [data]="datasetDataVM" [options]="options"></p-chart>
+                                </div>
+                            </div>
+                        </p-card>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="grid">
+            <div class="col-8 p-3">
+                <div class="grid">
+                    <div class="col-12 mt-3" *ngFor="let moduleDataVM of moduleDataVMs">
+                        <p-card>
+                            <div class="grid">
+                                <div class="col-6">
+                                    <h1>{{moduleDataVM?.moduleName}}</h1>
+                                </div>
+                                <div class="col-6 flex align-items-end justify-content-end">
+                                    <p>{{moduleDataVM?.lectureName}}</p>
+                                </div>
+                            </div>
+                        </p-card>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-3 mt-3">
+                <p-card>
+                    <div class="grid">
+                        <div class="col-12 text-center">
+                            <h1>
+                                30 <br>
+                                Wednesday
+                            </h1>
+                            <p>October 2024</p>
+                        </div>
+                    </div>
+                    <div class="grid"  *ngFor="let upcomingDataVM of upcomingDataVMs">
+                        <div class="col-12 mt-2">
+                            *
+                        </div>
+                    </div>
+                </p-card>
+            </div>
+        </div>
+    </p-scrollPanel>
 </div>

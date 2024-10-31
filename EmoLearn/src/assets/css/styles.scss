@@ -19,6 +19,10 @@
     margin-top: 70px;
 }
 
+.scroll-panel {
+    height: calc(100vh - 180px) !important;
+}
+
 .pull-right {
     float: right;
 }

@@ -1,30 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { ChartDataVM, DashboardService, DatasetDataVM, ModuleDataVM, UpcomingDataVM } from 'src/app/shared';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.scss']
+    selector: 'app-dashboard',
+    templateUrl: './dashboard.component.html',
+    styleUrls: ['./dashboard.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class DashboardComponent implements OnInit {
 
-  data: any;
-  options: any;
+    datasetDataVMs: ChartDataVM[];
+    moduleDataVMs: ModuleDataVM[];
+    upcomingDataVMs: UpcomingDataVM[];
+    options: any;
 
-  constructor() { }
+    constructor(
+        private dashboardService: DashboardService
+    ) { }
 
-  ngOnInit(): void {
-        this.data = {
-            labels: ['Red', 'Blue', 'Yellow', 'Green'],
-            datasets: [
-                {
-                    data: [300, 50, 100, 150],
-                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50'],
-                    hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50']
-                }
-            ]
-        };
-
+    ngOnInit(): void {
         this.options = {
             responsive: true,
             maintainAspectRatio: false,
@@ -44,6 +39,17 @@ export class DashboardComponent implements OnInit {
                 }
             }
         };
-  }
+
+        this.getDashboardMasterData();
+    }
+
+    getDashboardMasterData(): void {
+        this.dashboardService.getDashboardMasterData(1).subscribe(data => {
+            console.log("Data : ", data);
+            this.datasetDataVMs = data.chartDataVMs;
+            this.moduleDataVMs = data.moduleDataVMs;
+            this.upcomingDataVMs = data.upcomingDataVMs;
+        })
+    }
 
 }

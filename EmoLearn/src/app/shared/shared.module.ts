@@ -38,6 +38,7 @@ import { PaginatorModule } from 'primeng/paginator';
 import { PasswordModule } from 'primeng/password';
 import { HeaderComponent, MainMenuComponent } from './layouts';
 import { ChartModule } from 'primeng/chart';
+import { BroadcastService } from './services';
 
 @NgModule({
   declarations: [
@@ -139,6 +140,7 @@ import { ChartModule } from 'primeng/chart';
   providers: [
     MessageService,
     ConfirmationService,
+    BroadcastService,
   ]
 })
 export class SharedModule {}

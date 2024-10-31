@@ -1,0 +1,71 @@
+{
+    "chartDataVMs" : [
+        {
+            "name": "Engagement Level",
+            "date": "29/10/2024",
+            "labels": ["Afternoon", "Evening", "Morning"],
+            "datasets": [
+                {
+                    "data": [300, 50, 100],
+                    "backgroundColor": ["#c7ceff", "#8593ed", "#5a6acf"],
+                    "hoverBackgroundColor": ["#c7ceff", "#8593ed", "#5a6acf"]
+                }
+            ]
+        },
+        {
+            "name": "Engagement Level",
+            "date": "29/10/2024",
+            "labels": ["Afternoon", "Evening", "Morning"],
+            "datasets": [
+                {
+                    "data": [300, 50, 100],
+                    "backgroundColor": ["#f1ccdb", "#f4a6c6", "#ef75a0"],
+                    "hoverBackgroundColor": ["#f1ccdb", "#f4a6c6", "#ef75a0"]
+                }
+            ]
+        },
+        {
+            "name": "Engagement Level",
+            "date": "29/10/2024",
+            "labels": ["Afternoon", "Evening", "Morning"],
+            "datasets": [
+                {
+                    "data": [300, 50, 100],
+                    "backgroundColor": ["#ccf1d5", "#a6f4a8", "#75ef96"],
+                    "hoverBackgroundColor": ["#ccf1d5", "#a6f4a8", "#75ef96"]
+                }
+            ]
+        }
+    ],
+    "moduleDataVMs" : [
+        {
+            "lectureName": "Mr.R M Perera",
+            "moduleName": "Web API Development"
+        },
+        {
+            "lectureName": "Mrs.S K G Perera",
+            "moduleName": "Agile Development"
+        },
+        {
+            "lectureName": "Mrs.S K G Perera",
+            "moduleName": "iOS Application Development"
+        }
+    ],
+    "upcomingDataVMs" : [
+        {
+            "time": "",
+            "titile": "",
+            "isAvailableNow" : true
+        },
+        {
+            "time": "",
+            "titile": "",
+            "isAvailableNow" : false
+        },
+        {
+            "time": "",
+            "titile": "",
+            "isAvailableNow" : true
+        }
+    ]
+}
